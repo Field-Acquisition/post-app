@@ -12,12 +12,12 @@ export default function Home() {
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           Example:{" "}
           <code className="break-all rounded bg-zinc-200 px-1.5 py-0.5 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200">
-            /api/forward?name=alex&amp;status=active
+            /api/forward?record_id=recXXX&amp;availability=open
           </code>{" "}
-          → POST body{" "}
-          <code className="rounded bg-zinc-200 px-1.5 py-0.5 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200">
-            {`{"name":"alex","status":"active"}`}
-          </code>
+          → POST body includes those fields, and the browser sees a confirmation page with{" "}
+          <code className="rounded bg-zinc-200 px-1.5 py-0.5 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200">record_id</code>{" "}
+          and{" "}
+          <code className="rounded bg-zinc-200 px-1.5 py-0.5 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200">availability</code>.
         </p>
       </main>
     </div>
